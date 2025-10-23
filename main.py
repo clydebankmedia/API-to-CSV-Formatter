@@ -19,48 +19,6 @@ Tasks:
 
 
 # -------------------------------------
-# STEP 2: Fetch & Explore Posts Data
-# -------------------------------------
-"""
-Goal:
-Fetch data from the JSONPlaceholder /posts endpoint and preview the dataset.
-
-Tasks:
-- Define the posts endpoint URL
-- Make a GET request with requests.get()
-- Print status code, record count, and one example record
-"""
-
-
-# -------------------------------------
-# STEP 3: Normalize & Export Posts to CSV
-# -------------------------------------
-"""
-Goal:
-Convert post data into a clean, tabular format and write to 'posts.csv'.
-
-Tasks:
-- Choose headers: userId, id, title, body
-- Use csv.DictWriter to create and populate the file
-- Confirm correct headers and record count
-"""
-
-
-# -------------------------------------
-# STEP 4: Fetch & Explore Users Data
-# -------------------------------------
-"""
-Goal:
-Fetch and inspect the more complex /users endpoint to understand nested data.
-
-Tasks:
-- Request JSONPlaceholder /users
-- Print total users and one example user
-- Identify which nested fields (address, company) will need flattening
-"""
-
-
-# -------------------------------------
 # STEP 5: Normalize Users Data
 # -------------------------------------
 """
@@ -103,8 +61,48 @@ def main():
     print("🚀 JSON to CSV Export Tool initialized.")
     print("(Follow the project steps to implement functionality.)\n")
 
-    # Placeholder: your code will go here in later steps.
-    # Start with STEP 1 imports and a simple print check.
+    # -------------------------------------
+    # STEP 2: Fetch & Explore Posts Data
+    # -------------------------------------
+    """
+        Goal:
+        Fetch data from the JSONPlaceholder /posts endpoint and preview the dataset.
+
+        Tasks:
+        - Define the posts endpoint URL
+        - Make a GET request with requests.get()
+        - Print status code, record count, and one example record
+        """
+
+    # -------------------------------------
+    # STEP 3: Normalize & Export Posts to CSV
+    # -------------------------------------
+    """
+		Goal:
+		Convert post data into a clean, tabular format and write to 'posts.csv'.
+		
+		Tasks:
+		- Choose headers: userId, id, title, body
+		- Use csv.DictWriter to create and populate the file
+		- Confirm correct headers and record count
+		"""
+
+    # -------------------------------------
+    # STEP 4: Fetch & Explore Users Data
+    # -------------------------------------
+    """
+		Goal:
+		Fetch and inspect the more complex /users endpoint to understand nested data.
+		
+		Tasks:
+		- Request JSONPlaceholder /users
+		- Print total users and one example user
+		- Identify which nested fields (address, company) will need flattening
+		"""
+
+    # Later steps (5/6) code will be called here. 
+
+
     print("✅ Starter scaffold loaded successfully.")
 
 
